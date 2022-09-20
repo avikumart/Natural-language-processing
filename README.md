@@ -52,7 +52,7 @@ In this notebook, we are going to explore and solve news classification problem 
 ## Approches:
 - Comprehensivaley analyzed dataset to find number of categories, distribution of categories, most frequent words and visualizations
 - Cleaned data using Regex by removing, unwanted characters from text documents
-- Tokenezation and word indexing using keras library of python
+- Tokenization and word indexing using Keras library of python
 - Feature represenation using word embedding layer of keras
 - Built two models using simpleRNN and bidirectional LSTMs
 
