@@ -113,7 +113,7 @@ model  = tf.keras.models.load_model('new_clf_exp06.h5')
 with text_input:
     input_t = st.text_input("Enter news description here:", value=" ")
 
-if input_t is None:
+if len(input_t) == 0:
     st.text("Please entered any news description")
 else:
     st.write("You have entered news description as following:\n", input_t)
