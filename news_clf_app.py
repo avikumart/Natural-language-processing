@@ -4,7 +4,9 @@ from tensorflow import keras
 import re
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
+import wordcloud
 from wordcloud import STOPWORDS
+import sklearn
 import streamlit as st
 
 nltk.download('all')
