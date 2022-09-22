@@ -111,7 +111,7 @@ for k, v in enumerate(list_cat):
 model  = tf.keras.models.load_model('new_clf_exp06.h5')
 
 with text_input:
-    input_t = st.text_input("Enter news description here:", value=" ")
+    input_t = st.text_input("Enter news description here:", value="", placeholder="Enter any news descrptions here")
 
 if len(input_t) == 0:
     st.text("Please entered any news description")
