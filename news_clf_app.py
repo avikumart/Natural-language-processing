@@ -56,8 +56,8 @@ link: Link to the post
 short_description: Short description of the article
 date: Date the article was published""")
     
-with text_input:
-    input_t = st.text_input("Enter news description here:", value=" ")
+# with text_input:
+#   input_t = st.text_input("Enter news description here:", value=" ")
 
 # clean the input sequences:
 def data_cleaning(text):
@@ -103,17 +103,23 @@ for k, v in enumerate(list_cat):
     cat_dict.update({k:v})
 
 # take input text, clean the text, tokenize it, pad it and feed it to the model
-seq = data_cleaning(input_t)
-token_seq = tokenizer.texts_to_sequences(seq)
-token_pad = keras.preprocessing.sequence.pad_sequences(token_seq, maxlen=130)
+#seq = data_cleaning(input_t)
+#token_seq = tokenizer.texts_to_sequences(seq)
+#token_pad = keras.preprocessing.sequence.pad_sequences(token_seq, maxlen=130)
 
 # load the model for our prediction task
 model  = tf.keras.models.load_model('new_clf_exp06.h5')
+
+with text_input:
+    input_t = st.text_input("Enter news description here:", value=" ")
 
 if input_t is None:
     st.text("Please entered any news description")
 else:
     st.write("You have entered news description as following:\n", input_t)
+    seq = data_cleaning(input_t)
+    token_seq = tokenizer.texts_to_sequences(seq)
+    token_pad = keras.preprocessing.sequence.pad_sequences(token_seq, maxlen=130)
     output = model.predict(token_pad)
     output2 = output[0]
     arg_max = np.argmax(output2)
