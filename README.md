@@ -9,7 +9,9 @@ Project 1: Sentiment classification of movies review dataset
 
 Project 2: News article descriptions classification using bidirectional LSTMs
 
-News description classification web-app link: https://avikumart-natural-language-processing-news-clf-app-news--0st9q1.streamlitapp.com/
+News description classification web-app link: [Click here](https://avikumart-natural-language-processing-news-clf-app-news--0st9q1.streamlitapp.com/)
+
+Published article on Analytics Vidhya: [Click here](https://www.analyticsvidhya.com/blog/2022/09/understanding-word-embeddings-and-building-your-first-rnn-model/)
 
 -----------------------
 
