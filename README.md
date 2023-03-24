@@ -41,6 +41,12 @@ In this notebook, we will use Count vectorizer & TF-IDF vectorizer along with st
 In this notebook, we are going to explore and solve news classification problem to classify 41 types of news headlines and news descriptions.
 ![image](https://user-images.githubusercontent.com/88608935/190999860-33bb6afd-998c-4a9d-8a7c-71985931f6a4.png)
 
+### Web app screenshot:
+
+![image](https://user-images.githubusercontent.com/88608935/227511231-24853809-a19d-406b-a06e-f190d6f5be33.png)
+
+
+
 **Use-case:** Such text classification models are used in News Apps or by reporter to classify news topics for better reach to right audience.
 
 **Problem-statement:** Build news classification model using deep learning teechniques and deploy model for reporters to classify and label news articles.
